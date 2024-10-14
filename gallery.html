@@ -1,0 +1,89 @@
+<!-- Grunden -->
+ <!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study - Redesigning a Mobile App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li>
+                    <div class="portfolio-name">
+                        <a href="index.html">
+                            <img id="logga"  src="bilder/logga.png" alt="Case Study Image" />
+                        </a>
+                    </div>
+                </li>
+                <li><a href="aboutme.html#contact">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallerisektion -->
+    <section class="gallery-section">
+        <h1>My gallery</h1>
+        <p>Here are some projects and content i have worked on, <strong>enjoy!</strong></p>
+
+        <div class="gallery-grid">
+            <!-- Bild 1 -->
+            <div class="gallery-item">
+                <img src="image1.jpg" alt="Projekt 1" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3>Projekt 1</h3>
+                </div>
+            </div>
+
+            <!-- Bild 2 -->
+            <div class="gallery-item">
+                <img src="image2.jpg" alt="Projekt 2" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3>Projekt 2</h3>
+                </div>
+            </div>
+
+            <!-- Video 1 -->
+            <div class="gallery-item">
+                <video controls class="gallery-video">
+                    <source src="video1.mp4" type="video/mp4">
+                    Din webbläsare stödjer inte videouppspelning.
+                </video>
+                <div class="gallery-overlay">
+                    <h3>Video 1</h3>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="gallery-item">
+                <video controls class="gallery-video">
+                    <source src="video2.mp4" type="video/mp4">
+                    Din webbläsare stödjer inte videouppspelning.
+                </video>
+                <div class="gallery-overlay">
+                    <h3>Video 2</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mitt Portfolio. Alla rättigheter förbehållna.</p>
+        <a href="https://www.linkedin.com">LinkedIn</a> | <a href="https://github.com">GitHub</a>
+    </footer>
+
+</body>
+</html>
