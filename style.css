@@ -99,7 +99,7 @@ nav a:hover {
     text-align: center;
     padding: 100px 20px; /* Behåll tillräcklig padding */
     background-color: #f9f9f9;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
 .welcome-container {
@@ -139,12 +139,24 @@ nav a:hover {
     padding-top: 5vh;
 }
 
+.who-am-i-section {
+    background-color: #1d1c1c; /* Svart bakgrund */
+    color: white; /* Vit text */
+    padding: 50px; /* Utrymme runt texten */
+    border-radius: 40px; /* Rundade hörn */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Skugga för att skapa djup */
+    max-width: 900px; /* Begränsa bredden för bättre layout */
+    margin: 20px auto; /* Centrera och ge utrymme runt sektionen */
+}
+
+
 .about-me-h1{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-family: "koulen", sans-serif;
+    
     
 }
 
@@ -166,6 +178,30 @@ nav a:hover {
     font-size: 20px;
 }
 
+
+.cv-button-container {
+    text-align: center; /* Centrera knappen horisontellt */
+    margin-top: 20px; /* Lägger till utrymme ovanför knappen */
+    margin-bottom: 20px; /* Lägger till utrymme under knappen om det behövs */
+}
+
+.cv-button {
+    display: inline-block; /* Gör knappen till inline-block för padding och marginal */
+    padding: 10px 20px; /* Lägger till padding för att göra knappen större */
+    background-color: #90ac94; /* Bakgrundsfärg */
+    color: #ffffff; /* Textfärg */
+    text-decoration: none; /* Ta bort understrykning */
+    border-radius: 50px; /* Rundade kanter */
+    font-weight: bold; /* Fet stil */
+    margin-left: 50%;
+    transition: background-color 0.3s ease; /* Lägg till en övergångseffekt */
+}
+
+.cv-button:hover {
+    background-color: #76a579; /* Mörkare färg vid hover */
+}
+
+
 .about-image{
     width: 40vw;
     display: flex;
@@ -177,9 +213,9 @@ nav a:hover {
     max-height: 55%;
     margin-right: 10vw;
     margin-top: 4vh;
-    position: absolute;
     border-radius: 25px;
 }
+
 
 .about-text{
     width: 45vw;
@@ -188,18 +224,35 @@ nav a:hover {
 
 .more-info{
     margin-top: 6vh;
-    font-size: 20px;
+    font-size: 23px;
     
 }
 
 .more-info h3{
     margin-top: 2vh;
     color: #90ac94;
+    font-family: "Architects Daughter", cursive;
 }
 
 .more-info ul{
     margin-left: 2vw;
+    font-family: "Architects Daughter", cursive;
 }
+
+.horizontal-list {
+    list-style-type: disc;      /* Behåll punktmarkeringarna */
+    padding-left: 0;            /* Ta bort standard padding från listan */
+    text-align: left;           /* Justera texten till vänster */
+}
+
+.horizontal-list li {
+    display: inline-block;      /* Gör att listpunkterna placeras horisontellt */
+    width: 35%;                 /* Sätt bredd så att två listpunkter kan ligga bredvid varandra */
+    margin-bottom: 10px;        /* Marginal mellan listpunkterna vertikalt */
+    vertical-align: top;        /* Justera punkterna till toppen */
+    padding-left: 10px;         /* Lägg till padding så att punktmarkeringen inte försvinner */
+}
+
 
 
 /* <--CONTACT--> */
@@ -215,7 +268,7 @@ nav a:hover {
     align-items: center; /* Centrerar vertikalt */
     height: 60vh; /* Ändra till 100vh för att täcka hela sidan vertikalt */
     background-color: #90ac94; /* Bakgrundsfärg */
-    margin-top: 5vh;
+    margin-top: 40vh;
 }
 
 .contact-section form {
@@ -241,6 +294,13 @@ nav a:hover {
     margin-top: 1.5vw;
     background-color: #000000;
     color: white;
+    width: 50%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 20px auto; /* Centrera med auto marginaler */
 }
 
 
@@ -305,13 +365,13 @@ nav a:hover {
 /* Read more button styling */
 .read-more {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 25px;
+    font-size: 18px;
     color: #ffffff; /* Svart text på knappen */
     background-color: #1d1c1c; /* Gul bakgrund */
-    border-radius: 30px; /* Rundade kanter */
+    border-radius: 50px; /* Rundade kanter */
     text-decoration: none;
     font-weight: 600;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -344,9 +404,83 @@ footer a:hover {
     color: #ffffff; /* Vit text vid hover i footern */
 }
 
+
+/*CASE SIDORNA*/
+
+
+.project-button {
+    margin-top: 15px; /* Lägger till utrymme ovanför knappen */
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-button {
+    display: inline-block; /* Gör knappen till inline-block för padding och marginal */
+    padding: 10px 20px; /* Lägger till padding för att göra knappen större */
+    background-color: #90ac94; /* Bakgrundsfärg */
+    color: #ffffff; /* Textfärg */
+    text-decoration: none; /* Ta bort understrykning */
+    border-radius: 5px; /* Rundade kanter */
+    font-weight: bold; /* Fet stil */
+    margin-bottom: 80px;
+    font-size: 20px;
+    transition: background-color 0.3s ease; /* Lägg till en övergångseffekt */
+}
+
+.info-button:hover {
+    background-color: #76a579; /* Mörkare färg vid hover */
+}
+
+.navigation-buttons {
+    display: flex; /* Använd flexbox för att styla knapparna */
+    justify-content: space-between; /* Centrera knapparna horisontellt */
+    align-items: flex-start; /* Justera knapparna till toppen (flex-start) */
+    gap: 50px; /* Avstånd mellan knapparna */
+    margin-top: 40px; /* Lägger till lite avstånd ovanför knapparna */
+}
+
+.next-project-button {
+    text-align: right; /* Centrera knappen horisontellt */
+    margin-top: 20px; /* Lägger till lite utrymme ovanför knappen */
+}
+
+.next-button {
+    display: inline-block; /* Gör knappen till inline-block för padding och marginal */
+    padding: 10px 20px; /* Lägger till padding för att göra knappen större */
+    background-color: #90ac94; /* Bakgrundsfärg */
+    color: #ffffff; /* Textfärg */
+    text-decoration: none; /* Ta bort understrykning */
+    border-radius: 5px; /* Rundade kanter */
+    font-weight: bold; /* Fet stil */
+    transition: background-color 0.3s ease; /* Lägg till en övergångseffekt */
+}
+
+.next-button:hover {
+    background-color: #76a579; /* Mörkare färg vid hover */
+}
+
+.previous-project-button{
+    text-align: left; /* Centrera knappen horisontellt */
+    margin-top: 20px; /* Lägger till lite utrymme ovanför knappen */
+}
+
+.previous-button{
+    display: inline-block; /* Gör knappen till inline-block för padding och marginal */
+    padding: 10px 20px; /* Lägger till padding för att göra knappen större */
+    background-color: #90ac94; /* Bakgrundsfärg */
+    color: #ffffff; /* Textfärg */
+    text-decoration: none; /* Ta bort understrykning */
+    border-radius: 5px; /* Rundade kanter */
+    font-weight: bold; /* Fet stil */
+    transition: background-color 0.3s ease; /* Lägg till en övergångseffekt */  
+}
+
+.previous-button:hover{
+ background-color: #76a579; /* Mörkare färg vid hover */ 
+}
+
+
 .case-study-header{
     height: 55vh;
-    background-color: #f2f2f2;
 
 }
 
@@ -377,29 +511,33 @@ footer a:hover {
     justify-content: center;
     flex-direction: column;
     
+}#next_project{
+    background: #1d1c1c;
+    color: white;
 }
 
 .case-study-content{
     max-width: 95vw;
     margin-left: 2vw;
-    background-color: #1d1c1c;
     height: 100%;
     padding: 3vw;
     margin-top: 2vw;
     margin-bottom: 2vw;
     border-radius: 25px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background-color: #1d1c1c;
 }
 
 .case-study-content h2{
     font-size: 40px;
-    color: #90ac94;
+    color: #ffffff;
     font-family: "Architects Daughter", cursive;
 }
 
 .case-study-content p {
     margin-bottom: 1vw;
     font-size: 20px;
+    color: #ffffff;
 }
 
 .portfolio-name a{
@@ -450,22 +588,38 @@ footer a:hover {
 /* Grid layout för galleriet */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: auto auto auto; /* Automatisk kolumnlayout */
+    gap: 40px; /* Avstånd mellan galleriposter */
     padding: 0 20px;
+}
+
+.gallery-grid-2{
+    display: grid;
+    grid-template-columns: auto auto;
+
 }
 
 .gallery-item {
     position: relative;
+    overflow: hidden; /* Dölja överskjutande del av bilder */
 }
+
 
 .gallery-image, .gallery-video {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Gör bilden/videon responsiv */
+    height: auto; /* Bevara proportioner */
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease; /* Lägger till en mjuk övergångseffekt */
+    max-width: 800px; /* Maximal bredd för bilder */
+    min-width: 250px; /* Minsta bredd för bilder */
 }
 
+.gallery-video {
+    max-width: 800px; /* Större maxbredd för videor */
+}
+
+/*
 .gallery-overlay {
     position: absolute;
     top: 0;
@@ -473,19 +627,82 @@ footer a:hover {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 12px;
+} */
+
+/* Gallerisektion */
+.gallery-section {
+    padding: 30px; /* Utrymme runt galleriavsnittet */
 }
+
+
+
+.gallery-item {
+    position: relative; /* För att placera overlay */
+    overflow: hidden; /* Dölja överskjutande del av bilder */
+}
+
+.gallery-image {
+    width: 100%; /* Gör bilden responsiv */
+    height: auto; /* Bevara bildens proportioner */
+    /* cursor: pointer; /* Ändra muspekaren till hand */
+    transition: transform 0.2s; /* Lägga till en övergångseffekt */
+}
+
+/*
+.gallery-image:hover {
+    transform: scale(1.05); 
+} 
+*/
+
 
 .gallery-item:hover .gallery-overlay {
-    opacity: 1;
+    opacity: 1; /* Visa overlay vid hover */
 }
 
+/* Modal stil */
+.modal {
+    display: none; /* Göm modalen som standard */
+    position: fixed; /* Håll modalen på en fast position */
+    z-index: 9999; /* Sätt hög prioritet så att modalen är överst */
+    padding-top: 60px; /* Utrymme från toppen */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full bredd */
+    height: 100%; /* Full höjd */
+    overflow: auto; /* Tillåt rullning om nödvändigt */
+    background-color: rgba(0, 0, 0, 0.9); /* Svart bakgrund med transparens */
+}
+
+.modal-content {
+    margin: auto; /* Centrera innehållet */
+    display: block; /* Gör bilden synlig */
+    width: 80%; /* Sätt bredden */
+    max-width: 700px; /* Maximal bredd */
+}
+
+.close {
+    position: absolute; /* Placera stängningsknappen */
+    top: 20px;
+    right: 35px;
+    color: #fff; /* Vit färg */
+    font-size: 40px; /* Stor text */
+    font-weight: bold; /* Fet stil */
+    cursor: pointer; /* Visar att det går att klicka */
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb; /* Ljusare färg vid hover */
+    text-decoration: none; /* Ingen understrykning */
+    cursor: pointer; /* Visa pekare */
+}
 
 /* Responsiv design för mindre skärmar */
 

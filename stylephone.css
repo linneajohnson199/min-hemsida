@@ -1,0 +1,191 @@
+@media (max-width: 768px) {
+    .case-studies {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-name a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .welcome-section {
+        padding: 60px 20px;
+    }
+
+    .welcome-section h1 {
+        font-size: 36px;
+    }
+
+    .welcome-section p {
+        font-size: 16px;
+    }
+
+    .about-me {
+        padding: 80px 20px; /* Tillräcklig padding för vit yta */
+        background-color: #f9f9f9; /* Ljusgrå bakgrund för sektionen */
+        text-align: center; /* Centrera texten */
+    }
+    
+    .about-me h1 {
+        font-size: 48px;
+        color: #000000; /* Svart text */
+        margin-bottom: 40px; /* Mer utrymme under rubriken */
+        border-bottom: 2px solid #90ac94; /* Gult underline för rubrik */
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+    
+    .about-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Justera text och bild */
+        gap: 40px; /* Utrymme mellan text och bild */
+        max-width: 768px;
+        margin: 0 auto; /* Centrera innehållet */
+        
+    }
+    
+    .about-text {
+        flex: 1; /* Gör texten flexibelt för att ta upp tillgängligt utrymme */
+        text-align: left; /* Justera texten till vänster */
+    }
+
+    .about-image{
+        width: 100vw;
+
+    }
+    
+    .about-image img {
+        width: 100%; /* Sätt en specifik bredd för bilden */
+        height: auto;
+        border-radius: 8px; /* Rundade kanter för bilden */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Lätt skugga */
+    }
+
+    .who-am-i-section{
+        width: 80vw;
+    }
+    
+    .more-info h2, .more-info h3 {
+        margin-top: 30px; /* Marginal ovanför sektionerna */
+        color: #000000; /* Svart text */
+    }
+    
+    .more-info ul {
+        list-style-type: disc; /* Punktlista */
+        padding-left: 20px; /* Utrymme till vänster */
+        color: #000000; /* Svart text */
+    }
+    
+    /* Contact section styling */
+    .contact-section {
+        padding: 40px 20px;
+        background-color: #ffffff; /* Vit bakgrund för kontaktsektion */
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    .contact-section h2 {
+        margin-bottom: 20px; /* Utrymme under rubriken */
+        font-family: "kohlen", sans-serif;
+    }
+    
+    .contact-section form {
+        display: flex;
+        flex-direction: column; /* Ställ in formulärfält vertikalt */
+        gap: 15px; /* Utrymme mellan fälten */
+        max-width: 600px; /* Max bredd för formuläret */
+        margin: 0 auto; /* Centrera formuläret */
+    }
+    
+    .contact-section label {
+        text-align: left; /* Justera texten till vänster */
+    }
+    
+    .contact-section input,
+    .contact-section textarea {
+        padding: 10px; /* Utrymme inne i fälten */
+        border: 1px solid #ccc; /* Ljusgrå kant */
+        border-radius: 5px; /* Rundade kanter */
+        width: 100%; /* Full bredd */
+    }
+    
+    .contact-section button {
+        padding: 10px 15px;
+        background-color: #90ac94; /* Gul bakgrund */
+        color: #000000; /* Svart text */
+        border: none; /* Ingen kant */
+        border-radius: 5px; /* Rundade kanter */
+        font-weight: bold; /* Fet stil */
+        cursor: pointer; /* Pekar ändras till hand */
+    }
+    
+    .contact-section button:hover {
+        background-color: #90ac94; /* Mörkare gul vid hover */
+    }
+    
+    /* Footer stil */
+    footer {
+        margin-top: 40px; /* Utrymme ovanför footern */
+    }
+    
+    /* Case study header */
+.case-study-header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Ljusgrå bakgrund för headern */
+}
+
+.case-study-header h1 {
+    font-size: 36px;
+    color: #000000; /* Svart text */
+    margin-bottom: 20px;
+}
+
+/* Information box */
+.case-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.case-info img {
+    width: 200px; /* Sätt en fast bredd på bilden */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px; /* Avstånd mellan bild och text */
+}
+
+.case-details {
+    font-size: 16px;
+    color: #000000; /* Svart text */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Case study content */
+.case-study-content {
+    padding: 40px 20px;
+    background-color: #ffffff; /* Vit bakgrund */
+    margin: 20px;
+    border-radius: 12px; /* Rundade hörn */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.case-study-content h2 {
+    font-size: 28px;
+    color: #90ac94; /* Gul text för rubriker */
+    margin-bottom: 10px;
+}
+
+.case-study-content p {
+    font-size: 18px;
+    color: #000000; /* Svart text */
+    margin-bottom: 20px;
+}
+
+
+}

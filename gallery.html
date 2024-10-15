@@ -1,5 +1,4 @@
-<!-- Grunden -->
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
@@ -7,15 +6,16 @@
     <title>Case Study - Redesigning a Mobile App</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Koulen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Koulen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylephone.css" >
+    
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,7 +23,7 @@
                 <li>
                     <div class="portfolio-name">
                         <a href="index.html">
-                            <img id="logga"  src="bilder/logga.png" alt="Case Study Image" />
+                            <img id="logga" src="bilder/logga.png" alt="Case Study Image" />
                         </a>
                     </div>
                 </li>
@@ -33,15 +33,17 @@
         </nav>
     </header>
 
-    <!-- Gallerisektion -->
+    <!-- Gallerisektion med huvudrubrik -->
     <section class="gallery-section">
-        <h1>My gallery</h1>
-        <p>Here are some projects and content i have worked on, <strong>enjoy!</strong></p>
+        <h1>My Gallery</h1>
+        <p>Here are some projects and content I have worked on, <strong>enjoy!</strong></p>
 
+        <!-- Sektion för projekt (bilder) med underrubrik -->
+        <h2>Projects</h2>
         <div class="gallery-grid">
             <!-- Bild 1 -->
             <div class="gallery-item">
-                <img src="image1.jpg" alt="Projekt 1" class="gallery-image">
+                <img  alt="Projekt 1" class="gallery-image" src="bilder/ljd.png">
                 <div class="gallery-overlay">
                     <h3>Projekt 1</h3>
                 </div>
@@ -49,16 +51,74 @@
 
             <!-- Bild 2 -->
             <div class="gallery-item">
-                <img src="image2.jpg" alt="Projekt 2" class="gallery-image">
+                <img src="bilder/lov1bild.png" alt="Projekt 2" class="gallery-image">
                 <div class="gallery-overlay">
                     <h3>Projekt 2</h3>
                 </div>
             </div>
 
+            <!-- Ytterligare bilder -->
+            <div class="gallery-item">
+                <img src="bilder/domförstabild.png" alt="Projekt 3" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3>Projekt 3</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="bilder/beat.png" alt="Projekt 5" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3>Projekt 5</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="bilder/skräck.png" alt="Projekt 4" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3>Projekt 4</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="bilder/hjärta.png" alt="Projekt 5" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3>Projekt 5</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="bilder/hjärta.png" alt="Projekt 5" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3>Projekt 5</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="bilder/hjärta.png" alt="Projekt 5" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3>Projekt 5</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="bilder/hjärta.png" alt="Projekt 5" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3>Projekt 5</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+        <!-- Sektion för videor med underrubrik -->
+        <h2>Videos</h2>
+        <div class="gallery-grid-2">
             <!-- Video 1 -->
             <div class="gallery-item">
                 <video controls class="gallery-video">
-                    <source src="video1.mp4" type="video/mp4">
+                    <source src="videos/lov1.mp4" type="video/mp4">
                     Din webbläsare stödjer inte videouppspelning.
                 </video>
                 <div class="gallery-overlay">
@@ -69,7 +129,7 @@
             <!-- Video 2 -->
             <div class="gallery-item">
                 <video controls class="gallery-video">
-                    <source src="video2.mp4" type="video/mp4">
+                    <source src="videos/domförsta.mp4" type="video/mp4">
                     Din webbläsare stödjer inte videouppspelning.
                 </video>
                 <div class="gallery-overlay">
@@ -85,5 +145,31 @@
         <a href="https://www.linkedin.com">LinkedIn</a> | <a href="https://github.com">GitHub</a>
     </footer>
 
+
+<!--
+    <script>
+        // Hämta modal-elementet
+        var modal = document.getElementsByClassName("imageModal");
+        // Hämta modal-bilden
+        var modalImg = document.getElementsByClassName("modalImage");
+        // Hämta alla bilder med klassen "gallery-image"
+        var images = document.querySelectorAll(".gallery-image");
+
+        // Gå igenom alla bilder och lägg till en klick-händelse
+        images.forEach(function(img) {
+            img.onclick = function() {
+                modal.style.display = "block"; // Visa modalen
+                modalImg.src = this.src; // Sätt bildens källa till modalens bildkälla
+            }
+        });
+
+        // Hämta stängningsknappen
+        var closeBtn = document.querySelector(".close");
+        // När användaren klickar på stängningsknappen
+        closeBtn.onclick = function() {
+            modal.style.display = "none"; // Dölja modalen
+        }
+    </script>
+-->
 </body>
 </html>
