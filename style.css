@@ -209,8 +209,8 @@ nav a:hover {
 }
 
 .about-image img{
-    max-width:60% ;
-    max-height: 55%;
+    max-width:70% ;
+    max-height: 61%;
     margin-right: 10vw;
     margin-top: 4vh;
     border-radius: 25px;
@@ -268,7 +268,7 @@ nav a:hover {
     align-items: center; /* Centrerar vertikalt */
     height: 60vh; /* Ändra till 100vh för att täcka hela sidan vertikalt */
     background-color: #90ac94; /* Bakgrundsfärg */
-    margin-top: 40vh;
+    margin-top: 90vh;
 }
 
 .contact-section form {
@@ -407,6 +407,20 @@ footer a:hover {
 
 /*CASE SIDORNA*/
 
+.case-photos{
+    height: auto;
+    width: 60vw;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.case-photos-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
 .project-button {
     margin-top: 15px; /* Lägger till utrymme ovanför knappen */
@@ -427,7 +441,7 @@ footer a:hover {
 }
 
 .info-button:hover {
-    background-color: #76a579; /* Mörkare färg vid hover */
+    background-color: #1D1C1C; /* Mörkare färg vid hover */
 }
 
 .navigation-buttons {
@@ -534,6 +548,27 @@ footer a:hover {
     font-family: "Architects Daughter", cursive;
 }
 
+.case-study-content h3{
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Architects Daughter", cursive;
+}
+
+.case-study-content h4{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Architects Daughter", cursive;
+}
+
+.case-study-content h5{
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+}
+
 .case-study-content p {
     margin-bottom: 1vw;
     font-size: 20px;
@@ -578,11 +613,29 @@ footer a:hover {
 }
 
 .gallery-section p {
-    font-size: 18px;
+    font-size: 16px;
     color: #000000;
     max-width: 800px;
     margin: 0 auto 40px auto;
     line-height: 1.8;
+}
+
+.gallery-button{
+    margin-top: 15px; /* Lägger till utrymme ovanför knappen */
+    font-family: 'Poppins', sans-serif;
+}
+
+.gallery-info-button{
+    display:inline-block; /* Gör knappen till inline-block för padding och marginal */
+    padding: 15px 20px; /* Lägger till padding för att göra knappen större */
+    background-color: #1d1c1c; /* Bakgrundsfärg */
+    color: #ffffff; /* Textfärg */
+    text-decoration: none; /* Ta bort understrykning */
+    border-radius: 5px; /* Rundade kanter */
+    font-weight: bold; /* Fet stil */
+    margin-bottom: 50px;
+    font-size: 20px;
+    transition: background-color 0.3s ease; /* Lägg till en övergångseffekt */
 }
 
 /* Grid layout för galleriet */
@@ -596,7 +649,7 @@ footer a:hover {
 .gallery-grid-2{
     display: grid;
     grid-template-columns: auto auto;
-
+margin-top: 50px;
 }
 
 .gallery-item {
@@ -756,13 +809,6 @@ footer a:hover {
     .about-text {
         flex: 1; /* Gör texten flexibelt för att ta upp tillgängligt utrymme */
         text-align: left; /* Justera texten till vänster */
-    }
-    
-    .about-image img {
-        width: 300px; /* Sätt en specifik bredd för bilden */
-        height: auto; /* Behåll proportions */
-        border-radius: 8px; /* Rundade kanter för bilden */
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Lätt skugga */
     }
     
     .more-info h2, .more-info h3 {
